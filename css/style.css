@@ -1,0 +1,53 @@
+body {
+  font-family: 'Share Tech Mono', serif;
+  background-color: black;
+  font-size: 1.75em;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+#weather {
+  background: -webkit-linear-gradient(rgba(255, 255,255, 0.3), rgba(255, 255, 255, 0.7)), url("https://crossorigin.me/http://mmkepler.com/other/the-sea-1531885_1920.jpg");
+  background: linear-gradient(rgba(255, 255,255, 0.3), rgba(255, 255, 255, 0.7)), url("https://crossorigin.me/http://mmkepler.com/other/the-sea-1531885_1920.jpg");
+  border: 5px solid #006080;
+  border-radius: 10%;
+  padding: 20px;
+  min-width: 450px;
+  display: inline-block;
+  margin-top: 25px;
+ 
+}
+
+.bg {
+  background: -webkit-radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.05) 95%);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.05) 95%);
+  border-radius: 50px;
+  width: 40%;
+}
+
+.buttons {
+  padding-top: 0;
+}
+
+.btn-default {
+  background-color: #e6f9ff;
+  border:2px solid #006080;
+}
+
+.col2nums {
+  padding: 10px;
+}
+
+.numbers {
+  margin-top: 15px;
+}
+
+.secondColumn {
+  padding-top: 15px;
+}
