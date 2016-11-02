@@ -5,7 +5,8 @@
 +  CSS  
 +  Javascript  
 +  Jquery  
-+  Weather Underground API  
++  Weather Underground API 
++  Bootstrap  
 
 ### Author  
 +  Melissa Kepler a.k.a. Missarachnid
