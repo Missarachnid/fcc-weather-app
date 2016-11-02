@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>Weather App</title>
-  <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/style.css"> 
 </head>
 
-<body>
-  <body>
-  <div class="center-block">
-    <div class="container">
 
-      <div id="weather">
-        <div id="communication">
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="firstColumn">
-              <h3 id="city"></h3>
-              <p id=time></p>
-              <div class="bg center-block">
-                <div id="icon">
-                </div>
-              </div>
-              <div>
-                <h4 id="description"></h4>
-              </div>
-            </div>
+ <body>
+    <div class="center-block">
+      <div class="container">
+
+        <div id="weather">
+          
+          <div id="communication">
           </div>
 
-          <div class="col-lg-6">
-            <div class="secondColumn">
-              <div class="buttons">
-                <button class="btn btn-default btn-xs" id="celsius">&#176;C/kph</button>
-                <button class="btn btn-default btn-xs" id="fahrenheit">&#176;F/mph</button>
-              </div>
-              <div class="numbers">
-                <div class="col2nums">
-                  <p>Temperature: <span id="temperature"></span><span>&#176;</span><span id="tempUnit"></span></p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="firstColumn">
+                <h3 id="city"></h3>
+                <p id=time></p>
+                <div class="bg center-block">
+                  <div id="icon">
+                  </div>
                 </div>
-
-                <div class="col2nums">
-                  <p>Humidity: <span id="humidity"></span></p>
-                </div>
-
-                <div class="col2nums">
-                  <p>Wind Speed: <span id="wind"></span><span id="windUnit"></span></p>
+                <div>
+                  <h4 id="description"></h4>
                 </div>
               </div>
             </div>
+
+            <div class="col-lg-6">
+              <div class="secondColumn">
+                <div class="buttons">
+                  <button class="btn btn-default btn-xs" id="celsius">&#176;C/kph</button>
+                  <button class="btn btn-default btn-xs" id="fahrenheit">&#176;F/mph</button>
+                </div>
+                <div class="numbers">
+                  <div class="col2nums">
+                    <p>Temperature: <span id="temperature"></span><span>&#176;</span><span id="tempUnit"></span></p>
+                  </div>
+
+                  <div class="col2nums">
+                    <p>Humidity: <span id="humidity"></span></p>
+                  </div>
+
+                  <div class="col2nums">
+                    <p>Wind Speed: <span id="wind"></span><span id="windUnit"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span><h4>Weather by</h4><br><img id="wunderImg"></span>
           </div>
         </div>
-        <div>
-          <span><h4>Weather by</h4><br><img id="wunderImg"></span>
-        </div>
+
       </div>
-
     </div>
-  </div>
-</body>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
 
-      <script src="js/index.js"></script>
-
-</body>
+  </body>
 </html>
