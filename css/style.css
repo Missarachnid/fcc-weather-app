@@ -79,7 +79,7 @@ button.btn {
 #loader {
     position: absolute;
     top: 15%;
-    left: 38%;
+    left: 50%;
     font-size: 150px;
     color: rgba(255, 255, 255, 0.8);
     animation-name: spin;
