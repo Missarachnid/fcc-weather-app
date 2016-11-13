@@ -19,7 +19,6 @@ $(document).ready(function() {
       .done(
         function(data) {
          //put information from object sent into variables
-          console.log(data);
           var temperature = Math.floor(data.current_observation.temp_f);
           var cityName = data.current_observation.display_location.city;
           var weatherDescription = data.current_observation.weather;
