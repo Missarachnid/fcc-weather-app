@@ -19,9 +19,10 @@ body {
   border: 5px ridge lightgray;
   padding: 20px 0;
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 30px;
   width: 295px;
   height: 330px;
+  visibility: hidden;
 }
 
 #city {
@@ -74,4 +75,20 @@ button.btn {
 #imgDiv {
     font-size: 14px;
 }
-   
+
+#loader {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.8);
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
