@@ -28,7 +28,7 @@ $(document).ready(function() {
           var iconLink = "https://crossorigin.me/" + data.current_observation.icon_url;
           var iconImage = ('<img>');
           iconImage = $(iconImage).attr("src", iconLink).css("height", "53px");
-          var wunderImgLink = "http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png";
+          var wunderImgLink = "https://crossorigin.me/http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png";
           $("#wunderImg").attr("src", wunderImgLink).css("width", "90");
             
           //code for display of current time
