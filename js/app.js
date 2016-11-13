@@ -1,5 +1,8 @@
 //Initial code to retrieve Location and Weather in English/Imperial
+var $body = $("body");
+
 $(document).ready(function() {
+    
   var lati, longi;
   $("#fahrenheit").css("background-color", "#99e6ff");
 
@@ -19,6 +22,7 @@ $(document).ready(function() {
       .done(
         function(data) {
          //put information from object sent into variables
+          console.log(data);
           var temperature = Math.floor(data.current_observation.temp_f);
           var cityName = data.current_observation.display_location.city;
           var weatherDescription = data.current_observation.weather;
@@ -61,6 +65,9 @@ $(document).ready(function() {
           $("#humidity").html(humidity);
           $("#tempUnit").html("F");
           $("#windUnit").html("mph");
+          $("#weather").css("visibility", "visible");
+          $("#loader").css("animation-duration", "0ms");
+          $("#loader").css("visibility", "hidden");
             
           // Button causes metric conversion
           $("#celsius").click(function() {
