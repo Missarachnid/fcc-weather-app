@@ -1,6 +1,7 @@
 //Initial code to retrieve Location and Weather in English/Imperial
 $(document).ready(function() {
   var lati, longi;
+  $("#fahrenheit").css("background-color", "#99e6ff");
 
   //gather geolocation data from client
   navigator.geolocation.getCurrentPosition(successFunc, errorFunc, {
@@ -18,17 +19,18 @@ $(document).ready(function() {
       .done(
         function(data) {
          //put information from object sent into variables
+          console.log(data);
           var temperature = Math.floor(data.current_observation.temp_f);
           var cityName = data.current_observation.display_location.city;
-          var country = data.current_observation.display_location.country;
           var weatherDescription = data.current_observation.weather;
           var wind = data.current_observation.wind_mph;
           var humidity = data.current_observation.relative_humidity;
           var iconLink = "https://crossorigin.me/" + data.current_observation.icon_url;
           var iconImage = ('<img>');
           iconImage = $(iconImage).attr("src", iconLink).css("height", "53px");
-          var wunderImgLink = "https://crossorigin.me/" + data.current_observation.image.url;
-          $("#wunderImg").attr("src", wunderImgLink).css("width", "144px");
+          var wunderImgLink = "http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png";
+          $("#wunderImg").attr("src", wunderImgLink).css("width", "90");
+            
           //code for display of current time
           var today = new Date();
           var currentTime = new Date();
@@ -51,8 +53,8 @@ $(document).ready(function() {
           var timeNow = hours + ":" + minutes + " " + ending;
 
           //insert weather and time data into divs
-          $("#time").html(timeNow + " " + '<br>' + currentDate.toDateString());
-          $("#city").html(cityName + ", " + country);
+          $("#time").html(timeNow + " " + currentDate.toDateString());
+          $("#city").html(cityName);
           $("#temperature").html(temperature);
           $("#icon").append(iconImage);
           $("#description").html(weatherDescription);
@@ -60,24 +62,25 @@ $(document).ready(function() {
           $("#humidity").html(humidity);
           $("#tempUnit").html("F");
           $("#windUnit").html("mph");
-          // function for celcius conversion
-          $("#celsius").click(function(event) {
-            event.preventDefault();
-            $("#fahrenheit").css("border", "none");
+            
+          // Button causes metric conversion
+          $("#celsius").click(function() {
+            $("#fahrenheit").css("background-color", "white");
             $("#temperature").html(Math.floor((((temperature - 32) * 5) / 9)));
             $("#wind").html(Math.round(wind * 1.60934));
-            $("#celsius").css("border", "3px solid black");
+            $("#celsius").css("background-color", "#99e6ff");
             $("#tempUnit").html("C");
             $("#windUnit").html("kph");
           });
-          //function for fahrenheit
+            
+          //Button back to imperial measure
           $("#fahrenheit").click(function(event) {
             event.preventDefault();
-            $("#celsius").css("border", "none");
+            $("#celsius").css("background-color", "white");
             temperature = temperature;
             $("#temperature").html(temperature);
             $("#wind").html(wind);
-            $("#fahrenheit").css("border", "3px solid black");
+            $("#fahrenheit").css("background-color", "#99e6ff");
             $("#tempUnit").html("F");
             $("#windUnit").html("mph");
 
