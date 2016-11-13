@@ -1,70 +1,80 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Weather App</title>
-    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css"> 
-  </head>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App-experiment1</title>
+    <link href="https://fonts.googleapis.com/css?family=Eczar:500,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
 
+  
+</head>
 
- <body>
-    <div class="center-block">
-      <div class="container">
+  <body>
+      <div class="center-block">
+        <div class="container">
 
-        <div id="weather">
-          
-          <div id="communication">
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="firstColumn">
-                <h3 id="city"></h3>
-                <p id=time></p>
-                <div class="bg center-block">
-                  <div id="icon">
-                  </div>
-                </div>
-                <div>
-                  <h4 id="description"></h4>
-                </div>
-              </div>
+          <div id="weather">
+            <div id="communication">
             </div>
 
-            <div class="col-lg-6">
-              <div class="secondColumn">
-                <div class="buttons">
-                  <button class="btn btn-default btn-xs" id="celsius">&#176;C/kph</button>
-                  <button class="btn btn-default btn-xs" id="fahrenheit">&#176;F/mph</button>
-                </div>
-                <div class="numbers">
-                  <div class="col2nums">
-                    <p>Temperature: <span id="temperature"></span><span>&#176;</span><span id="tempUnit"></span></p>
+
+                
+                  <h3 id="city"></h3>
+                  <p id=time></p>
+                  <div class="bg center-block">
+                    <div id="icon">
+                    </div>
+                  </div>
+                  <div>
+                    <h4 id="description"></h4>
+                  </div>
+               
+
+
+                  <div class="buttons">
+                    <button class="btn" id="celsius">&#176;C/kph</button>
+                    <button class="btn" id="fahrenheit">&#176;F/mph</button>
                   </div>
 
-                  <div class="col2nums">
-                    <p>Humidity: <span id="humidity"></span></p>
+
+              <div class="row">
+                  <div class="col-xs-1 icons"></div>
+      <div class="col-xs-2">
+                      <i class="fa fa-thermometer-empty" aria-hidden="true">&nbsp;<span id="temperature"></span><span>&#176;</span><span id="tempUnit"></span></i>
                   </div>
 
-                  <div class="col2nums">
-                    <p>Wind Speed: <span id="wind"></span><span id="windUnit"></span></p>
+                  <div class="col-xs-1"></div>
+                  
+                   <div class="col-xs-3 icons">
+                      <i class="fa fa-tint" aria-hidden="true">&nbsp;<span id="humidity"></span></i>
                   </div>
-                </div>
+                  
+                  <div class="col-xs-1"></div>
+
+                   <div class="col-xs-3 icons">
+                      <i class="fa fa-tachometer" aria-hidden="true">&nbsp;<span id="wind"></span><span id="windUnit"></span></i>
+                  </div>
+              <div class="col-xs-1"></div>
+
+          </div>
+              
+              <div id="imgDiv">
+
+              <p>Weather by</p>
+                  <img id="wunderImg">
               </div>
             </div>
           </div>
-          <div>
-            <span><h4>Weather by</h4><br><img id="wunderImg"></span>
-          </div>
-        </div>
 
       </div>
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-    <script src="js/app.js"></script>
+
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+      <script src="js/index.js"></script>
 
   </body>
 </html>
