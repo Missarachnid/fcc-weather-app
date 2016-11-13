@@ -1,53 +1,77 @@
 body {
-  font-family: 'Share Tech Mono', serif;
+  font-family: 'Eczar', serif;
   background-color: black;
-  font-size: 1.75em;
-  color: black;
   text-align: center;
+  font-size: 16px;
 }
 
 .container {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
 #weather {
-  background: -webkit-linear-gradient(rgba(255, 255,255, 0.3), rgba(255, 255, 255, 0.7)), url("https://crossorigin.me/http://mmkepler.com/other/the-sea-1531885_1920.jpg");
-  background: linear-gradient(rgba(255, 255,255, 0.3), rgba(255, 255, 255, 0.7)), url("https://crossorigin.me/http://mmkepler.com/other/the-sea-1531885_1920.jpg");
-  border: 5px solid #006080;
-  border-radius: 10%;
-  padding: 20px;
-  min-width: 450px;
+  background-color: #333333;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  border: 5px ridge lightgray;
+  padding: 20px 0;
   display: inline-block;
   margin-top: 25px;
- 
+  width: 295px;
+  height: 330px;
+}
+
+#city {
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: bold;
+}
+#time {
+    font-size: 14px;
+}
+
+.icons {
+    width: 60px;
+    
+}
+.col-xs-1 {
+    width: 10px;
+    margin: 0; 
 }
 
 .bg {
-  background: -webkit-radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.05) 95%);
-  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.05) 95%);
+  background: -webkit-radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.4) 95%);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.4) 95%);
   border-radius: 50px;
-  width: 40%;
+  width: 100px;
+  height: 53px;
 }
 
-.buttons {
-  padding-top: 0;
+button.btn {
+    color: black;
+    border-radius: 20px 0;
+    padding: 2px 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    font-size: 12px;
+    border: none;
 }
 
-.btn-default {
-  background-color: #e6f9ff;
-  border:2px solid #006080;
-}
-
-.col2nums {
-  padding: 10px;
+.btn:hover, .btn:active, .btn:focus, .btn:focus, .btn:hover, .btn:active:focus {
+    outline: 0;
+    border: none;
+    outline-offset: 0;   
 }
 
 .numbers {
   margin-top: 15px;
 }
 
-.secondColumn {
-  padding-top: 15px;
+#imgDiv {
+    font-size: 14px;
 }
+   
