@@ -28,11 +28,10 @@ $(document).ready(function() {
           var weatherDescription = data.current_observation.weather;
           var wind = data.current_observation.wind_mph;
           var humidity = data.current_observation.relative_humidity;
-          var iconLink = "https://crossorigin.me/" + data.current_observation.icon_url;
+          var iconLink = data.current_observation.icon_url;
           var iconImage = ('<img>');
           iconImage = $(iconImage).attr("src", iconLink).css("height", "53px");
-          var wunderImgLink = "https://crossorigin.me/http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png";
-          $("#wunderImg").attr("src", wunderImgLink).css("width", "90");
+          
             
           //code for display of current time
           var today = new Date();

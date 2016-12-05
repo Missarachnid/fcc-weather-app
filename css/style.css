@@ -76,6 +76,10 @@ button.btn {
     font-size: 14px;
 }
 
+#wunderImg {
+	width: 90px;
+}
+
 #loader {
     position: absolute;
     top: 15%;
