@@ -82,7 +82,8 @@ button.btn {
 
 #loader {
     position: absolute;
-    content: "";
+    left: 50%;
+    transform: translateX(-50%);
     top: 15%;
     text-align: center;
     font-size: 150px;
