@@ -86,14 +86,18 @@ button.btn {
     margin-left: -70px;
     top: 15%;
     font-size: 140px;
-    color: rgba(255, 255, 255, 0.8);
-    animation-name: spin;
-    animation-duration: 3000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    color: rgba(255, 255, 255, 0.9);
 }
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+
+
+.footer{
+    margin-top: 20px;
+    height: 30px;
 }
+
+.links {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
 
