@@ -29,6 +29,7 @@ $(document).ready(function() {
           var wind = data.current_observation.wind_mph;
           var humidity = data.current_observation.relative_humidity;
           var iconLink = data.current_observation.icon_url;
+          iconLink = iconLink.replace("http", "https");
           var iconImage = ('<img>');
           iconImage = $(iconImage).attr("src", iconLink).css("height", "53px");
           
