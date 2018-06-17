@@ -15,4 +15,4 @@
 +  Free Code Camp 
 +  Weather Underground
 
-### The project can be found here https://missarachnid.github.io/fcc-weather-app/
+### The project can be found [here](https://missarachnid.github.io/fcc-weather-app/)
