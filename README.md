@@ -1,4 +1,6 @@
 # Weather App  
+This project was built around the Wunderground API, which no longer exists.
+
   This is my Free Code Camp weather app project.
 ### Built With
 +  HTML  
@@ -14,5 +16,3 @@
 ### Acknowlegdments
 +  Free Code Camp 
 +  Weather Underground
-
-### The project can be found [here](https://missarachnid.github.io/fcc-weather-app/)
